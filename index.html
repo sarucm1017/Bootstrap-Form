@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaq.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container-fluid con_padd">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 section">
+                <div class="col-md-12 page_style">
+                    <div class="header">
+                        <h3 class="heading">Basic Details</h3>
+                    </div>
+                    <div class="body">
+                        <div class="col-md-12 dot space">
+                            <i class="fa-solid fa-upload color_icon"></i>
+                            <a href="#"><strong>Upload Image</strong></a>
+                            <h6 class="color_cls">PNG, JPG files are allowed</h6>
+                        </div>
+                        <form class="row">
+                            <div class="col-md-3 colum">
+                                <label for="salutation" class="form-label heading_color space">Salutation</label>
+                                <select id="salutation" class="form-select">
+                                    <option selected class="on_color">select</option>
+                                    <option>Mr</option>
+                                    <option>Mrs</option>
+                                </select>
+                            </div>
+                            <div class="col-md-5 colum">
+                                <label for="f_name" class="form-label heading_color space">First Name</label>
+                                <input id="f_name" type="text" class="form-control on_color" placeholder="john">
+                            </div>
+                            <div class="col-md-4 colum">
+                                <label for="l_name" class="form-label heading_color space">Last Name</label>
+                                <input id="l_name" type="text" class="form-control on_color" placeholder="doe">
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="e_add" class="form-label heading_color space">Email Address</label>
+                                <input id="e_add" type="text" class="form-control on_color " placeholder="mail@simmple.com">
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="m_no" class="form-label heading_color space">Mobile Number</label>
+                                <input id="m_no" type="text" class="form-control on_color" placeholder="enter mobile number">
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="date_b" class="form-label heading_color space">Date of birth</label>
+                                <input id="date_b" type="date" class="form-control on_color" placeholder="select date of birth">
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="label" class="form-label heading_color space">Gender</label>
+                                <div class="identity">
+                                    <div>
+                                        <input type="radio" name="gender" id="male" value="male" checked>
+                                        <label for="male">Male</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 colum">
+                                <label for="add" class="form-label heading_color space">Address</label>
+                                <input id="add" type="text" class="form-control on_color" placeholder="enter address">
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="country" class="form-label heading_color space">Country</label>
+                                <select id="country" class="form-select">
+                                    <option selected class="on_color">select</option>
+                                    <option>India</option>
+                                    <option>Canada</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="state" class="form-label heading_color space">State</label>
+                                <select id="state" class="form-select">
+                                    <option selected class="on_color">select</option>
+                                    <option>Kerala</option>
+                                    <option>TamilNadu</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="city" class="form-label heading_color space">City</label>
+                                <input id="city" type="text" class="form-control on_color" placeholder="enter city">
+                            </div>
+                            <div class="col-md-6 colum">
+                                <label for="pin" class="form-label heading_color space">Pin/Zip</label>
+                                <input id="pin" type="text" class="form-control on_color" placeholder="enter pin/zip">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-6 section page2">
+                <div class="col-md-12 page-style">
+                    <div class="header">
+                        <h3 class="heading space">Advanced Details</h3>
+                    </div>
+                    <div class="body">
+                        <div class=" alert alert-warning warning">
+                            <p class="title mb-1">Sample warning messages - alert</p>
+                            <p class="sentence">Lorem, ipsum dolor sit amet consectetur adipisicing elit.vero placeat enim
+                                accusantium optio! Placeat sit,iure facere eligendi, vel, eos accusantium fugiat dolor
+                                sequi totam?</p>
+                        </div>
+                        <div class="col-md-12 atributes">
+                            <div class="col-md-6 colum col_margin">
+                                <label class="heading_color space star">Height</label>
+                                <div class="col-md-12 ranges">
+                                    <div class="col-md-8 range_values">
+                                        <input type="range" class="form-range">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" value="160cm" class= "form-control values">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 colum col_margin">
+                                <label class="heading_color space star">Weight</label>
+                                <div class="col-md-12 ranges">
+                                    <div class="col-md-8 range_values">
+                                        <input type="range" class="form-range">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" value="68kg" class="form-control values">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 atributes">
+                            <div class="col-md-5 choosecolor colum">
+                                <label for="color" class="heading_color space star">Choose Color</label>
+                                <input type="color" value="#cb5d9f" class="form-control form-control-color w_d">
+                            </div>
+                            <div class="col-md-7 colum">
+                                <label for="" class="heading_color space star">Choose Template</label>
+                                <div class="col-md-12 temps">
+                                    <div class="col-md-4 template">
+                                        <input type="checkbox" id="check1" class="form-check-input checked_box">
+                                        <label for="check1" class="tem"> Template1</label>
+                                    </div>
+                                    <div class="col-md-4 template">
+                                        <input type="checkbox" id="check2" class="form-check-input checked_box">
+                                        <label for="check2" class="tem"> Template2</label>
+                                    </div>
+                                    <div class="col-md-4 template">
+                                        <input type="checkbox" id="check3" class="form-check-input checked_box">
+                                        <label for="check3" class="tem"> Template3</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 colum">
+                            <label for="qualification" class="heading_color space">Qualifications</label>
+                            <input id="qualifications" type="text" class="form-control on_color" placeholder="enter Qualification">
+                        </div>
+                        <div class="col-md-12 m_bot">
+                            <label for="about" class="heading_color space star ">About your self</label>
+                            <textarea id="about" type="text" rows="7" class="form-control text_height"
+                                placeholder="enter here"></textarea>
+                        </div>
+                        <div class="col-md-12 mar_bot">
+                            <input type="checkbox" id="check" class="form-check-inline">
+                            <label for="check" class="heading_color space">I Accept Terms & Conditions</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer_style">
+            <div class="col-md-12 btn_grp">
+                <a >
+                    <button type="button" class="btn btn-light btn-lg border-radius btn_color">Cancel</button>
+                </a>
+                <a href="">
+                    <button type="button" class="btn btn-primary btn-lg border-radius btn_fill">Save changes</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   </div>
+    
+</body>
+</html>
